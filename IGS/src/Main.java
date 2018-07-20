@@ -1,19 +1,31 @@
-import java.util.Scanner;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
-		//Déclaration du scanner ici....
-		String nom,userName = "user";
-		String motDePasse, passWord = "123";
-		
-		//Déclaration de la boucle (do) ici...
-		System.out.print("Please enter UserName: ");
-		nom = "";//Lecture du nom d'utilisateur ici...
-		System.out.print("\nPlease enter the password: ");
-		motDePasse = "";//Lecture de mot de passe ici...
-		while(nom.equals(userName) && motDePasse.equals(passWord));
-		System.out.print("Welcome "+nom);
+		int a = 5;
+		switch (a){
+		case 0:
+			addition(10, 25);
+			break;
+		case 1:
+			break;
+		default:
+			System.out.println("non!");
+			break;
+		}
 	}
 
+	static int addition(int a, int b){
+		return a+b;
+	}
+	
+	static float division(int a, int b){
+
+		if(b == 0){
+			System.out.println("Erreur: division par zero!");
+			return 0;
+		}else{
+			return a/b;
+		}
+	}
 }
