@@ -1,31 +1,43 @@
+import java.util.Random;
+import java.util.Scanner;
+
 
 public class Main {
 	
 	public static void main(String[] args) {
-		int a = 5;
-		switch (a){
-		case 0:
-			addition(10, 25);
-			break;
+		Scanner sc = new Scanner(System.in);
+		Random r = new Random();
+		System.out.print("Choisissez:"
+				+ "\n1)-piere"
+				+ "\n2)-papier"
+				+ "\n1)-scisseaux");
+		int choix = 0;//lisez le choix:
+		switch(choix){
 		case 1:
+			choixPiere();
 			break;
-		default:
-			System.out.println("non!");
+		case 2:
+			choixPapier();
 			break;
+		case 3:
+			choixSciseau();
+			break;
+		//ecrivez le default
 		}
 	}
 
-	static int addition(int a, int b){
-		return a+b;
-	}
-	
-	static float division(int a, int b){
-
-		if(b == 0){
-			System.out.println("Erreur: division par zero!");
-			return 0;
-		}else{
-			return a/b;
+		static void choixPiere(){
+			//utiliser le random pour generer un chiffre et 
+			//gerez les cas du choix de l'ordinateur par un SWITCH
 		}
+		static void choixPapier(){
+			//utiliser le random pour generer un chiffre et 
+			//gerez les cas du choix de l'ordinateur par un SWITCH			
+		}
+		static void choixSciseau(){
+			//utiliser le random pour generer un chiffre et 
+			//gerez les cas du choix de l'ordinateur par un SWITCH
+		}
+		
+		
 	}
-}
