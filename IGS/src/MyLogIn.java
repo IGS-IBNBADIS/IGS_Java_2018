@@ -89,6 +89,7 @@ public class MyLogIn extends JFrame {
                     StockManager stock = new StockManager();
                     stock.setVisible(true);
                     setVisible(false);
+                   
                 }else{
                     message.setText("Wrong user name or password !");
                 }

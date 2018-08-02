@@ -156,12 +156,15 @@ public class StockManager extends JFrame {
 
 				String search = deleteField.getText();
 				int searchIndex = 0;
+				boolean isFound = false;
+				
 				for (int i = 0; i < model.getRowCount(); i++) {
 					if( search.matches(model.getValueAt(i,0).toString())){
 						searchIndex = i;
+						isFound = true;
 					}
 				}
-				model.removeRow(searchIndex);
+				if(isFound) model.removeRow(searchIndex);
 				deleteField.setText("");
 			}
 		});
